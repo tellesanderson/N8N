@@ -161,17 +161,16 @@ docker compose down -v
 ## 🔄 Atualizações
 
 Para atualizar versões de imagens:
-umentation](https://docs.n8n.io/)
-- [Docker Compose Documentation](https://docs.docker.com/compose/)
-- [Cloudflare Tunnel - Setup Guide](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/)
-- [Cloudflare Tunnel - Get started](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/)
-- [Como adicionar domínio ao Cloudflare](https://developers.cloudflare.com/dns/zone-setup
+
+```bash
+# atualize as versões no .env
 N8N_IMAGE=n8nio/n8n:2.28.0
 POSTGRES_IMAGE=postgres:18.5
 CLOUDFLARED_IMAGE=cloudflare/cloudflared:2026.7.0
 ```
 
 2. Reinicie os containers:
+
 ```bash
 docker compose down
 docker compose up -d
@@ -210,4 +209,5 @@ docker compose up -d
 
 ## 📄 Licença
 
-[Sua licença aqui]
+Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para detalhes.
+
